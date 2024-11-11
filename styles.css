@@ -215,6 +215,7 @@ table {
     }
     h1, h2 {
         font-family: 'Kavoon';
+        font-weight: bold;
     }
     h1 {
         font-size: 3em;
@@ -227,23 +228,40 @@ table {
     }
     h2 {
         font-size: 2em;
+        font-weight: bold;
     }
     h3 {
         font-size: 1.5em;
+        font-weight: bold;
     }
     h4 {
         font-size: 1.15em;
+        font-weight: bold;
     }
     header {
         background-color: var(--lavender);
         color: var(--white);
         text-align: center;
+        margin-bottom: 2rem;
+    }
+    header h1 {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
     }
     header p {
         background-color: var(--pink);
+        padding: 1rem;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    span {
+      display: none;
     }
     nav {
         background-color: var(--yellow);
+    }
+    nav li {
+      display: none;
     }
     #menu-bttn {
         background-color: var(--yellow);
@@ -256,6 +274,60 @@ table {
         border-bottom-right-radius: 15px;
         border-top-left-radius: 5px;
     }
+    main{
+      max-width: 80%;
+      margin-inline: auto;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+    #services h2 {
+      color: var(--white);
+    }
+    .one-on h3 {
+      color: var(--yellow);
+    }
+    .one-on {
+      display: grid;
+      grid-template-rows: 10px repeat(3, 1fr);
+      padding: 1rem 0;
+      row-gap: 2rem;
+    }
+    .personal-dev {
+      display: grid;
+      grid-template-rows: repeat(3, auto-fit);
+      row-gap: 1rem;
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .personal-dev h4 {
+      color: var(--purple);
+    }
+    .career-coaching {
+      display: grid;
+      grid-template-rows: repeat(3, auto-fit);
+      row-gap: 1rem;
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .career-coaching h4 {
+      color: var(--purple);
+    }
+    .relationship-coaching {
+      display: grid;
+      grid-template-rows: repeat(3, auto-fit);
+      row-gap: 1rem;
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .relationship-coaching h4 {
+      color: var(--purple);
+    }
+
     footer {
         background-color: var(--lavender);
         display: flex;
@@ -266,9 +338,19 @@ table {
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         padding: 1rem;
-
+    }
+    footer a {
+      color: var(--white);
     }
 }
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media (min-width:834px) {
+  body {
+    background-color: purple;
+  }
+  span {
+    display: inline;
+  }
+}
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
