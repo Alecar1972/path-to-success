@@ -274,13 +274,9 @@ table {
         border-bottom-right-radius: 15px;
         border-top-left-radius: 5px;
     }
-    main{
+    #services {
       max-width: 80%;
       margin-inline: auto;
-  }
-  img {
-    display: block;
-    max-width: 100%;
   }
     #services h2 {
       color: var(--white);
@@ -296,7 +292,7 @@ table {
     }
     .personal-dev {
       display: grid;
-      grid-template-rows: repeat(3, auto-fit);
+      grid-template-rows: auto;
       row-gap: 1rem;
       background-color: var(--white);
       border-radius: 8px;
@@ -307,7 +303,7 @@ table {
     }
     .career-coaching {
       display: grid;
-      grid-template-rows: repeat(3, auto-fit);
+      grid-template-rows: auto;
       row-gap: 1rem;
       background-color: var(--white);
       border-radius: 8px;
@@ -318,7 +314,7 @@ table {
     }
     .relationship-coaching {
       display: grid;
-      grid-template-rows: repeat(3, auto-fit);
+      grid-template-rows: auto;
       row-gap: 1rem;
       background-color: var(--white);
       border-radius: 8px;
@@ -327,7 +323,167 @@ table {
     .relationship-coaching h4 {
       color: var(--purple);
     }
-
+    .group {
+      display: grid;
+      grid-template-rows: 10px repeat(2, 1fr);
+      padding: 1rem 0;
+      row-gap: 2rem;
+    }
+    .group h3 {
+      color: var(--yellow);
+    }
+    .supportive-community {
+      display: grid;
+      grid-template-rows: auto;
+      row-gap: 1rem;
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .supportive-community h4 {
+      color: var(--purple);
+    }
+    .focused-sessions {
+      display: grid;
+      grid-template-rows: auto;
+      row-gap: 1rem;
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .focused-sessions h4 {
+      color: var(--purple);
+    }
+    .workshops {
+      display: grid;
+      grid-template-rows: 10px 1fr;
+      padding: 1rem 0;
+      row-gap: 2rem;
+    }
+    .workshops h3 {
+      color: var(--yellow);
+    }
+    .interactive-learning {
+      display: grid;
+      grid-template-rows: auto;
+      row-gap: 1rem;
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .interactive-learning h4 {
+      color: var(--purple);
+    }
+    .online-courses {
+      display: grid;
+      grid-template-rows: 10px 1fr;
+      padding: 1rem 0;
+      row-gap: 2rem;
+    }
+    .online-courses h3 {
+      color: var(--yellow);
+    }
+    .flexible-learning {
+      display: grid;
+      grid-template-rows: auto;
+      row-gap: 1rem;
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 10px;
+    }
+    .flexible-learning h4 {
+      color: var(--purple);
+    }
+    #why {
+      background-color: var(--pink);
+      padding-bottom: 1rem;
+    }
+    #why h2 {
+      color: var(--white);
+      padding: 1rem;
+    }
+    #why ul {
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+      max-width: 80%;
+      margin: 1rem auto;
+    }
+    #why li:nth-child(1) {
+      background-color: var(--teal);
+      border-radius: 3px;
+      padding: 1rem;
+      text-align: center;
+    }
+    #why li:nth-child(2) {
+      background-color: var(--lavender);
+      border-radius: 3px;
+      text-align: center;
+      padding: 1rem;
+    }
+    #why li:nth-child(3) {
+      background-color: var(--yellow);
+      border-radius: 3px;
+      text-align: center;
+      padding: 1rem;
+    }
+    #why li:nth-child(4) {
+      background-color: var(--white);
+      border-radius: 3px;
+      text-align: center;
+      padding: 1rem;
+    }
+    #pricing {
+      max-width: 80%;
+      margin: 1rem auto;
+    }
+    #pricing h2 {
+      color: var(--white);
+      padding: .25rem;
+    }
+    #pricing h3 {
+      color: var(--yellow);
+      padding: .25rem;
+    }
+    table {
+      background-color: var(--white);
+      border: 2px solid var(--yellow);
+      margin: 0 auto;
+    }
+    tr td {
+      border: 2px solid var(--yellow);
+      padding: 1rem;
+    }
+    th {
+      font-weight: bold;
+      padding: 1rem;
+      background-color: var(--yellow);
+    }
+    #first-step {
+      background-color: var(--pink);
+      color: var(--white);
+      padding: 1rem;
+    }
+    #first-step h2 {
+      padding-bottom: 1rem;
+    }
+    #first-step p{
+      padding-bottom: 1rem;
+    }
+    #first-step a {
+      display: block;
+      color: var(--dark-gray);
+      background-color: var(--white);
+      text-decoration: none;
+      margin: 0 auto;
+      text-align: center;
+      width: 350px;
+      border-radius: 3px;
+      padding: 1rem;
+      box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+    }
     footer {
         background-color: var(--lavender);
         display: flex;
@@ -345,12 +501,152 @@ table {
 }
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 @media (min-width:834px) {
-  body {
-    background-color: purple;
-  }
   span {
     display: inline;
   }
+  .one-on {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10px 1fr 1fr;
+    gap: 2rem;
+  }
+  .one-on h3 {
+    grid-column: 1 / -1;
+  }
+  .relationship-coaching {
+    grid-column: 1 / -1;
+  }
+  .group {
+    display: grid;
+    grid-template-rows: 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .group h3 {
+    grid-column: 1 / -1;
+  }
+  #why ul {
+    display: flex;
+  }
+  #pricing {
+    display: grid;
+    grid-template-rows: 25px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  #pricing h2  {
+    grid-column: 1 / -1;
+  }
+  #first-step {
+    display: grid;
+    grid-template-rows: 25px;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  #first-step h2 {
+    grid-column: 1 / -1;
+  }
 }
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media (min-width: 950px) {
+  #menu-bttn {
+    display: none;
+  }
+  nav li {
+    display: contents;
+    color: var(--dark-gray);
+    text-decoration: none;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--yellow);
+    border-radius: 7px;
+  }
+  nav a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    padding: .75rem;
+  }
+
+  #services {
+    max-width: 90%;
+  }
+  .one-on {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 20%;
+    margin-right: 1rem;
+  }
+  .group {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 20%;
+    margin-right: 1rem;
+  }
+  .workshops {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 20%;
+    margin-right: 1rem;
+  }
+  .online-courses {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 20%;
+    margin-right: 1rem;
+  }
+  #pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25px 1fr;
+  }
+  .t-one-on {
+    display: grid;
+    grid-template-rows: 10px 1fr;
+    row-gap: 4rem;
+  }
+  .t-group {
+    display: grid;
+    grid-template-rows: 10px 1fr;
+    gap: 4rem;
+  }
+  .t-workshops {
+    display: grid;
+    grid-template-rows: 10px 1fr;
+    gap: 4rem;
+  }
+  .t-online-courses {
+    display: grid;
+    grid-template-rows: 10px 1fr;
+    gap: 4rem;
+  }
+}
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+@media (min-width: 1280px) {
+  header {
+    max-width: 80%;
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  #services {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .one-on {
+    max-width: 23%;
+  }
+  .group {
+    max-width: 23%;
+  }
+  .workshops {
+    max-width: 23%;
+  }
+  .online-courses {
+    max-width: 23%;
+  }
+}
